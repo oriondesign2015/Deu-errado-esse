@@ -1,6 +1,6 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// When the resource `httpVerb` is selected, this `operation` parameter will be shown.
+// Definindo as operações do verbo HTTP
 export const httpVerbOperations: INodeProperties[] = [
     {
         displayName: 'Operation',
@@ -24,15 +24,11 @@ export const httpVerbOperations: INodeProperties[] = [
                 },
             },
         ],
-        type: 'fixedCollection',
-        typeOptions: {
-            multipleValues: true,
-        },
+        default: 'get', // Adicionando a propriedade default
     },
 ];
 
-// Here we define what to show when the `get` operation is selected.
-// We do that by adding `operation: ["get"]` to `displayOptions.show`
+// Definindo a operação GET
 const getOperation: INodeProperties[] = [
     {
         displayName: 'Type of Data',
@@ -57,7 +53,7 @@ const getOperation: INodeProperties[] = [
     {
         displayName: 'Query Parameters',
         name: 'arguments',
-        default: {},
+        default: {}, // Adicionando a propriedade default
         description: "The request's query parameters",
         displayOptions: {
             show: {
@@ -102,8 +98,7 @@ const getOperation: INodeProperties[] = [
     },
 ];
 
-// Here we define what to show when the DELETE Operation is selected.
-// We do that by adding `operation: ["delete"]` to `displayOptions.show`
+// Definindo a operação DELETE
 const deleteOperation: INodeProperties[] = [
     {
         displayName: 'Type of Data',
@@ -116,123 +111,13 @@ const deleteOperation: INodeProperties[] = [
                 operation: ['delete'],
             },
         },
+        type: 'options',
         options: [
             {
                 name: 'Query',
                 value: 'queryParameter',
             },
-            {
-                name: 'JSON',
-                value: 'jsonData',
-            },
         ],
         required: true,
-        type: 'options',
     },
-    {
-        displayName: 'Query Parameters',
-        name: 'arguments',
-        default: {},
-        description: "The request's query parameters",
-        displayOptions: {
-            show: {
-                resource: ['httpVerb'],
-                operation: ['delete'],
-                typeofData: ['queryParameter'],
-            },
-        },
-        options: [
-            {
-                name: 'keyvalue',
-                displayName: 'Key:Value',
-                values: [
-                    {
-                        displayName: 'Key',
-                        name: 'key',
-                        type: 'string',
-                        default: '',
-                        required: true,
-                        description: 'Key of query parameter',
-                    },
-                    {
-                        displayName: 'Value',
-                        name: 'value',
-                        type: 'string',
-                        default: '',
-                        routing: {
-                            send: {
-                                property: '={{$parent.key}}',
-                                type: 'query',
-                            },
-                        },
-                        required: true,
-                        description: 'Value of query parameter',
-                    },
-                ],
-            },
-        ],
-        type: 'fixedCollection',
-        typeOptions: {
-            multipleValues: true,
-        },
-    },
-    {
-        displayName: 'JSON Object',
-        name: 'arguments',
-        default: {},
-        description: "The request's JSON properties",
-        displayOptions: {
-            show: {
-                resource: ['httpVerb'],
-                operation: ['delete'],
-                typeofData: ['jsonData'],
-            },
-        },
-        options: [
-            {
-                name: 'keyvalue',
-                displayName: 'Key:Value',
-                values: [
-                    {
-                        displayName: 'Key',
-                        name: 'key',
-                        type: 'string',
-                        default: '',
-                        required: true,
-                        description: 'Key of JSON property',
-                    },
-                    {
-                        displayName: 'Value',
-                        name: 'value',
-                        type: 'string',
-                        default: '',
-                        routing: {
-                            send: {
-                                property: '={{$parent.key}}',
-                                type: 'body',
-                            },
-                        },
-                        required: true,
-                        description: 'Value of JSON property',
-                    },
-                ],
-            },
-        ],
-        type: 'fixedCollection',
-        typeOptions: {
-            multipleValues: true,
-        },
-    },
-];
-
-export const httpVerbFields: INodeProperties[] = [
-    /* -------------------------------------------------------------------------- */
-    /*                                httpVerb:get                                */
-    /* -------------------------------------------------------------------------- */
-    ...getOperation,
-
-    /* -------------------------------------------------------------------------- */
-    /*                              httpVerb:delete                               */
-    /* -------------------------------------------------------------------------- */
-    ...deleteOperation,
 ];
