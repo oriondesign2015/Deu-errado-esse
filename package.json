@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-evolutionapi",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Node para integração com EvolutionAPI",
   "keywords": [
     "n8n-community-node-package"
@@ -36,10 +36,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/evolutionapi.credentials.js"
+      "dist/credentials/evolutionApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/evolutionapi/evolutionapi.node.js"
+      "dist/nodes/evolutionapi/evolutionApi.node.js"
     ]
   },
   "devDependencies": {
