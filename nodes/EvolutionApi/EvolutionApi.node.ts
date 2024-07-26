@@ -4,7 +4,7 @@ import { httpVerbFields, httpVerbOperations } from './HttpVerbDescription';
 export class EvolutionAPI implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'EvolutionAPI',
-		name: 'evolutionApi',
+		name: 'evolutionApi', // Changed to match the name in the JSON
 		icon: 'file:evolutionapi.svg',
 		group: ['transform'],
 		version: 1,
@@ -17,7 +17,7 @@ export class EvolutionAPI implements INodeType {
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'evolutionApi',
+				name: 'evolutionApi', // Changed to match the name in the credentials class
 				required: false,
 			},
 		],
