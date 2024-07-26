@@ -1,7 +1,7 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import { httpVerbFields, httpVerbOperations } from './HttpVerbDescription';
 
-export class EvolutionAPI implements INodeType {
+export class EvolutionApi implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'EvolutionAPI',
 		name: 'evolutionApi', // Changed to match the name in the JSON
