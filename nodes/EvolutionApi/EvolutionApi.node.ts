@@ -18,7 +18,7 @@ export class EvolutionAPI implements INodeType {
 		credentials: [
 			{
 				name: 'evolutionApi', // Changed to match the name in the credentials class
-				required: false,
+				required: true, // or false, depending on if it's required
 			},
 		],
 		requestDefaults: {
