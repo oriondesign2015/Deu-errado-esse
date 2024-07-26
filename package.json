@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-evolutionapi",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Node para integração com EvolutionAPI",
   "keywords": [
     "n8n-community-node-package"
