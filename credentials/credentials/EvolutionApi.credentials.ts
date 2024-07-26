@@ -8,7 +8,7 @@ import {
 export class EvolutionApi implements ICredentialType {
 	name = 'evolutionApi';
 	displayName = 'EvolutionAPI';
-	documentationUrl = '<your-docs-url>';
+	documentationUrl = 'https://doc.evolution-api.com';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Token',
