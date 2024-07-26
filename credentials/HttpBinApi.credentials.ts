@@ -5,9 +5,9 @@ import {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class HttpBinApi implements ICredentialType {
-	name = 'httpbinApi';
-	displayName = 'HttpBin API';
+export class EvolutionApi implements ICredentialType {
+	name = 'evolutionApi';
+	displayName = 'EvolutionAPI';
 	documentationUrl = '<your-docs-url>';
 	properties: INodeProperties[] = [
 		{
@@ -23,7 +23,7 @@ export class HttpBinApi implements ICredentialType {
 			displayName: 'Domain',
 			name: 'domain',
 			type: 'string',
-			default: 'https://httpbin.org',
+			default: 'https://evolutionapi.com',
 		},
 	];
 
