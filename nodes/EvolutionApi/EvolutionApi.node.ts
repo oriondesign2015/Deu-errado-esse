@@ -1,9 +1,9 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import { httpVerbFields, httpVerbOperations } from './HttpVerbDescription';
 
-export class EvolutionAPI implements INodeType {
+export class evolutionapi implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'EvolutionAPI',
+        displayName: 'evolutionapi',
         name: 'evolutionApi',
         icon: 'file:evolutionapi.svg',
         group: ['transform'],
@@ -11,7 +11,7 @@ export class EvolutionAPI implements INodeType {
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
         description: 'Interact with EvolutionAPI',
         defaults: {
-            name: 'EvolutionAPI',
+            name: 'evolutionapi',
         },
         inputs: ['main'],
         outputs: ['main'],

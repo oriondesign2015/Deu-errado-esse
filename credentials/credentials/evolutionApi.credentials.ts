@@ -5,7 +5,7 @@ import {
     INodeProperties,
 } from 'n8n-workflow';
 
-export class EvolutionApi implements ICredentialType {
+export class evolutionapi implements ICredentialType {
     name = 'evolutionApi';
     displayName = 'Evolution API';
     documentationUrl = 'https://doc.evolution-api.com';
