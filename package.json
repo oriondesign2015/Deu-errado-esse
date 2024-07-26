@@ -6,7 +6,7 @@
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/oriondesign2015/n8n-nodes-evolution-api",
   "author": {
     "name": "OrionDesign",
     "email": "contato@oriondesign.art.br"
@@ -36,7 +36,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/EvolutionApi.credentials.js"
+      "dist/credentials/credentials/EvolutionApi.credentials.js"
     ],
     "nodes": [
       "dist/nodes/EvolutionApi/EvolutionApi.node.js"
