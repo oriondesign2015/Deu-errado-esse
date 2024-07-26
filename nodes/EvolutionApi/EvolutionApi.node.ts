@@ -1,5 +1,5 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { httpVerbFields, httpVerbOperations } from './HttpVerbDescription';
+import { httpVerbOperations } from './HttpVerbDescription';
 
 export class evolutionapi implements INodeType {
     description: INodeTypeDescription = {
@@ -44,7 +44,6 @@ export class evolutionapi implements INodeType {
                 default: 'httpVerb',
             },
             ...httpVerbOperations,
-            ...httpVerbFields,
         ],
     };
 }
