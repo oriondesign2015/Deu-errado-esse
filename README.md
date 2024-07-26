@@ -1,46 +1,46 @@
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
-# n8n-nodes-starter
+# n8n-nodes-evolutionapi
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.
+Este repositório contém nodes de exemplo para ajudar você a começar a criar suas próprias integrações personalizadas para [n8n](n8n.io). Inclui o linter de nodes e outras dependências.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+Para tornar seu node personalizado disponível para a comunidade, você deve criá-lo como um pacote npm e [submetê-lo ao registro npm](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
 
-## Prerequisites
+## Pré-requisitos
 
-You need the following installed on your development machine:
+Você precisa ter o seguinte instalado em sua máquina de desenvolvimento:
 
 * [git](https://git-scm.com/downloads)
-* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
+* Node.js e pnpm. Versão mínima Node 18. Você pode encontrar instruções sobre como instalar ambos usando nvm (Node Version Manager) para Linux, Mac e WSL [aqui](https://github.com/nvm-sh/nvm). Para usuários de Windows, consulte o guia da Microsoft para [Instalar NodeJS no Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
+* Instale n8n com:
   ```
   pnpm install n8n -g
   ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+* Recomendado: siga o guia do n8n para [configurar seu ambiente de desenvolvimento](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
 
-## Using this starter
+## Usando este starter
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+Estes são os passos básicos para trabalhar com o starter. Para orientações detalhadas sobre como criar e publicar nodes, consulte a [documentação](https://docs.n8n.io/integrations/creating-nodes/).
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
+1. [Gere um novo repositório](https://github.com/n8n-io/n8n-nodes-starter/generate) a partir deste repositório de template.
+2. Clone seu novo repositório:
    ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
+   git clone https://github.com/<sua organização>/<seu-nome-repo>.git
    ```
-3. Run `pnpm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+3. Execute `pnpm i` para instalar as dependências.
+4. Abra o projeto no seu editor.
+5. Navegue pelos exemplos em `/nodes` e `/credentials`. Modifique os exemplos ou substitua-os pelos seus próprios nodes.
+6. Atualize o `package.json` para corresponder aos seus detalhes.
+7. Execute `pnpm lint` para verificar erros ou `pnpm lintfix` para corrigir erros automaticamente quando possível.
+8. Teste seu node localmente. Consulte [Execute seu node localmente](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) para orientação.
+9. Substitua este README pela documentação do seu node. Use o [README_TEMPLATE](README_TEMPLATE.md) para começar.
+10. Atualize o arquivo LICENSE para usar seus detalhes.
+11. [Publique](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) seu pacote no npm.
 
-## More information
+## Mais informações
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+Consulte nossa [documentação sobre criação de nodes](https://docs.n8n.io/integrations/creating-nodes/) para informações detalhadas sobre como construir seus próprios nodes.
 
-## License
+## Licença
 
 [MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)

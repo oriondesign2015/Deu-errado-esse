@@ -1,8 +1,8 @@
-# n8n-nodes-_node-name_
+# n8n-nodes-evolutionapi
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
+This is an n8n community node. It lets you use EvolutionAPI in your n8n workflows.
 
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+EvolutionAPI is _one or two sentences describing the service this node integrates with_.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -44,5 +44,3 @@ _By the time users are looking for community nodes, they probably already know n
 ## Version history
 
 _This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
-
-
