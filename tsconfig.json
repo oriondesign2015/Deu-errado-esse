@@ -20,6 +20,7 @@
 		"sourceMap": true,
 		"skipLibCheck": true,
 		"outDir": "./dist/",
+		"typeRoots": ["./node_modules/@types", "./node_modules/n8n-workflow"]
 	},
 	"include": [
 		"credentials/**/*",
